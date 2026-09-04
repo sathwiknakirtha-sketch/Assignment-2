@@ -1,0 +1,10 @@
+filename = input("enter the file name:")
+with open(filename,"r")as file:
+    content = file.read()
+    words = content.split()
+    lines = content.splitlines()
+    characters = len(content)
+    print("\n--file details--")
+    print("number of words:",len(words))
+    print("number of lines:",len(lines))
+    print("number of characters:",characters)
